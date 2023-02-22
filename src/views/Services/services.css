@@ -1,0 +1,106 @@
+.service-images {
+  border-radius: 2%;
+  width: 40%;
+  height: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.service-images2 {
+  border-radius: 2%;
+  width: 40%;
+  height: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.service-images3 {
+  border-radius: 2%;
+  width: 40%;
+  height: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.serviceCard {
+  display: flex;
+  justify-content: space-between;
+}
+.serviceCard2 {
+  display: flex;
+  justify-content: space-between;
+}
+.services-p {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+.services-p2 {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 850px) {
+  .serviceCard {
+    flex-wrap: wrap;
+  }
+  .serviceCard2 {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    height: 100;
+  }
+  .service-images {
+    width: 70%;
+    height: 60%;
+    border-radius: 1%;
+  }
+  .service-images2 {
+    width: 70%;
+    height: 60%;
+    border-radius: 1%;
+    margin-left: 1px;
+  }
+  .service-images3 {
+    margin-left: 1px;
+    width: 70%;
+    height: 60%;
+    border-radius: 1%;
+    margin-bottom: 10px;
+  }
+  .services-p {
+    margin-left: 1px;
+    margin-top: 5px;
+  }
+  .services-p2 {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .service-images {
+    margin-left: 1px;
+    width: 87%;
+    height: 60%;
+    border-radius: 1%;
+  }
+  .service-images2 {
+    margin-left: 1px;
+    width: 80%;
+    height: 60%;
+    border-radius: 1%;
+  }
+  .service-images3 {
+    margin-left: 1px;
+    width: 80%;
+    height: 60%;
+    border-radius: 1%;
+    margin-bottom: 10px;
+  }
+}
+.service-images:hover {
+  opacity: 0.7;
+}
+.service-images1:hover {
+  opacity: 0.7;
+}
+.service-images3:hover {
+  opacity: 0.7;
+}

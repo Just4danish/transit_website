@@ -1,0 +1,132 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.container1 {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.container1 img {
+  vertical-align: middle;
+}
+
+.container1 .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  .main {
+    flex-wrap: wrap;
+  }
+  .blogs {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .blogsCard {
+    flex-wrap: wrap;
+  }
+}
+
+.images1 {
+  border-radius: 2%;
+  width: 20%;
+  height: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.images {
+  border-radius: 2%;
+  width: 40%;
+  height: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.container1:hover .image {
+  opacity: 0.3;
+}
+.container1:hover .content {
+  display: none;
+}
+.container1:hover {
+  background-color: #1d6584;
+}
+.container1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 13px;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.blogs-p {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.blogsCard {
+  display: flex;
+  justify-content: space-between;
+}

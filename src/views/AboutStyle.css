@@ -1,0 +1,65 @@
+.aboutCeoandTeamCard {
+  display: flex;
+  justify-content: space-between;
+}
+.ceoimage {
+  border-radius: 1%;
+  width: 50%;
+  height: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.ceo_p {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.conduct {
+}
+.teamCard {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.team-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 850px) {
+  .aboutCeoandTeamCard {
+    flex-wrap: wrap;
+  }
+  .ceoimage {
+    margin-left: 0px;
+  }
+  .ceo_p {
+    margin-left: 0px;
+  }
+  .teamCard {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutCeoandTeamCard {
+    flex-wrap: wrap;
+  }
+  .ceoimage {
+    margin-left: 30px;
+    width: 60%;
+    height: 70%;
+  }
+  .ceo_p {
+    margin-left: 30px;
+  }
+  .teamCard {
+    margin-left: 30px;
+  }
+  .conduct {
+    margin-left: 30px;
+  }
+  .team-image {
+    width: 100%;
+    height: 100%;
+  }
+}
